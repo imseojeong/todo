@@ -1,7 +1,12 @@
-import './App.css'
+import { Global } from '@emotion/react'
+import { GlobalStyle } from './globalStyle'
 
 const App: React.FC = () => {
-  return <div className="App">hi</div>
+  return (
+    <div>
+      <Global styles={GlobalStyle} />
+    </div>
+  )
 }
 
 export default App
